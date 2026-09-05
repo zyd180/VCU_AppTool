@@ -1,5 +1,5 @@
 %% TrqArb_dd 数据字典V2（由dd_excel2m自动生成，勿手改，去改xlsx的Input/Output/Calibration）
-%% 生成时间: 2026-09-06 01:02:01
+%% 生成时间: 2026-09-06 02:16:31
 DD = struct(); DD.SWCName = 'TrqArb';
 DD.Input = {
   'SignalName', 'Port', 'Interface', 'DataType', 'Unit', 'Min', 'Max', 'Init', 'Desc';

@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'TrqArb'.
  *
- * Model version                  : 1.34
+ * Model version                  : 1.36
  * Simulink Coder version         : 9.9 (R2023a) 19-Nov-2022
- * C/C++ source code generated on : Sun Sep  6 01:27:07 2026
+ * C/C++ source code generated on : Sun Sep  6 02:16:35 2026
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
