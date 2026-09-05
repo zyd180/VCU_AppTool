@@ -1,4 +1,4 @@
-{
+﻿{
     "version": "1.0",
     "entries": [
         {
@@ -10,34 +10,34 @@
                     "type": "Section",
                     "title": "新建",
                     "children": [
-                        { "type": "Column", "width": 80, "children": [ { "type": "PushButton", "action": "vcuOpenAppAction" } ] },
-                        { "type": "Column", "width": 80, "children": [ { "type": "PushButton", "action": "vcuNewSwcAction" } ] }
+                        { "type": "Column", "width": 84, "children": [ { "type": "PushButton", "action": "vcuOpenAppAction" } ] },
+                        { "type": "Column", "width": 84, "children": [ { "type": "PushButton", "action": "vcuNewSwcAction" } ] }
                     ]
                 },
                 {
                     "type": "Section",
                     "title": "字典",
                     "children": [
-                        { "type": "Column", "width": 80, "children": [ { "type": "PushButton", "action": "vcuDdGenAction" } ] },
-                        { "type": "Column", "width": 80, "children": [ { "type": "PushButton", "action": "vcuDdCheckAction" } ] }
+                        { "type": "Column", "width": 84, "children": [ { "type": "PushButton", "action": "vcuDdGenAction" } ] },
+                        { "type": "Column", "width": 84, "children": [ { "type": "PushButton", "action": "vcuDdCheckAction" } ] }
                     ]
                 },
                 {
                     "type": "Section",
                     "title": "生成",
                     "children": [
-                        { "type": "Column", "width": 80, "children": [ { "type": "PushButton", "action": "vcuCodegenAction" } ] },
-                        { "type": "Column", "width": 80, "children": [ { "type": "PushButton", "action": "vcuArxmlAction" } ] },
-                        { "type": "Column", "width": 80, "children": [ { "type": "PushButton", "action": "vcuA2lAction" } ] }
+                        { "type": "Column", "width": 84, "children": [ { "type": "PushButton", "action": "vcuCodegenAction" } ] },
+                        { "type": "Column", "width": 84, "children": [ { "type": "PushButton", "action": "vcuArxmlAction" } ] },
+                        { "type": "Column", "width": 84, "children": [ { "type": "PushButton", "action": "vcuA2lAction" } ] }
                     ]
                 },
                 {
                     "type": "Section",
                     "title": "验证",
                     "children": [
-                        { "type": "Column", "width": 80, "children": [ { "type": "PushButton", "action": "vcuRunAllAction" } ] },
-                        { "type": "Column", "width": 80, "children": [ { "type": "PushButton", "action": "vcuTestAction" } ] },
-                        { "type": "Column", "width": 80, "children": [ { "type": "PushButton", "action": "playSimulationAction" } ] }
+                        { "type": "Column", "width": 84, "children": [ { "type": "PushButton", "action": "vcuRunAllAction" } ] },
+                        { "type": "Column", "width": 84, "children": [ { "type": "PushButton", "action": "vcuTestAction" } ] },
+                        { "type": "Column", "width": 84, "children": [ { "type": "PushButton", "action": "playSimulationAction" } ] }
                     ]
                 }
             ]
