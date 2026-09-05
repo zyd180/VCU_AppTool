@@ -53,7 +53,7 @@ UI 与后端解耦：界面只做参数收集+调用+日志展示，所有逻辑
 ## 4. 分期（共4期，每期独立可验）
 
 - **U1 App壳+日志+SWC下拉**：`VCU_App.mlapp`可打开，7页空壳，日志/下拉/版本页可用。验收：App内看到版本号+SWC列表。
-- **U2 回调全接通**：7页按钮逐页调通后端（每页huang后打勾），`package_app.m`产出`.mlappinstall`可安装。验收：App内点完全链（TrqArb）与命令行结果一致。
+- **U2 回调全接通**：8个回调逐个调通后端并实测，`package_app.m`打包向导（R2023a无纯脚本打包API，校验文件+开对话框手动两步；主分发走U3工具栏）。验收：App内点完全链（TrqArb）与命令行结果一致。
 - **U3 工具栏装载**：`install_toolstrip.m` + JSON布局 + 自定义动作，Simulink里出现VCU选项卡，按钮与App等价。验收：新开Simulink+任意模型，VCU页可见可用；`uninstall`干净卸载。
 - **U4 收尾**：图标、中文tooltip、异常弹窗（后端warning/error转UI红字不断连）、README/手册补UI章节、打版。
 
