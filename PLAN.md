@@ -73,7 +73,9 @@ create_swc_template('TrqArb'); codegen_onekey('TrqArb'); arxml_gen('TrqArb'); ar
 new_swc('MySwc'); run_all('TrqArb');
 ```
 
-## 待确认（默认按括号执行）
+## 仓库说明
+- 本仓库根即项目根（`README.md`/`VERSION`在根目录），无包装层；本地路径 `E:\OpenCode\VCU_AppTool`。
+- 历史：2026-09-06前远端曾套 `VCU_AppTool/` 一层，已拍平（force-push），旧 tag v0.1.0/v0.2.0 随旧历史作废，现仅 `v0.3.0`；`E:\OpenCode` 外层仓库已解绑远端，仅作本地工作区容器。
 1. Classic 4.4（默认）vs 4.2 — 默认4.4; 2. 试点TrqArb — 默认是; 3. RTE用Vector DaVinci还是仅MATLAB闭环 — 默认仅MATLAB闭环+可导入检查。
 
 ## 暂缓项（留档，条件具备再启）
