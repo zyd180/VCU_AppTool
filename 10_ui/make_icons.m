@@ -19,12 +19,12 @@ defs = {
     };
 for k = 1:size(defs,1)
     id = defs{k,1}; txt = defs{k,2}; bg = defs{k,3};
+    big = uint8(zeros(96, 96, 3));
+    for c = 1:3, big(:,:,c) = bg(c); end
+    big = insertText(big, [48 48], txt, 'FontSize', 56, ...
+        'BoxOpacity', 0, 'TextColor', 'white', 'AnchorPoint', 'Center');
     for sz = [16 24]
-        img = uint8(zeros(sz, sz, 3));
-        for c = 1:3, img(:,:,c) = bg(c); end
-        img = insertText(img, [sz/2 sz/2], txt, 'FontSize', sz-4, ...
-            'BoxOpacity', 0, 'TextColor', 'white', 'AnchorPoint', 'Center');
-        imwrite(img, fullfile(iconDir, sprintf('%s_%d.png', id, sz)));
+        imwrite(imresize(big, [sz sz]), fullfile(iconDir, sprintf('%s_%d.png', id, sz)));
     end
 end
 fprintf('图标已生成(%d套): %s\n', size(defs,1), iconDir);
