@@ -22,8 +22,8 @@ for k = 1:size(defs,1)
     for sz = [16 24]
         img = uint8(zeros(sz, sz, 3));
         for c = 1:3, img(:,:,c) = bg(c); end
-        img = insertText(img, [1 1], txt, 'FontSize', sz-6, ...
-            'BoxOpacity', 0, 'TextColor', 'white', 'AnchorPoint', 'LeftTop');
+        img = insertText(img, [sz/2 sz/2], txt, 'FontSize', sz-4, ...
+            'BoxOpacity', 0, 'TextColor', 'white', 'AnchorPoint', 'Center');
         imwrite(img, fullfile(iconDir, sprintf('%s_%d.png', id, sz)));
     end
 end
