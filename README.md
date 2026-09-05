@@ -23,7 +23,7 @@ A2L `08_cal/output/<SWC>/`、需求 `09_req/<SWC>_req.slreqx`。
 ## 界面使用（可替代命令行）
 
 - 主界面：`vcu_app`（7页：新建/字典/建模/生成/需求/测试/关于，底部日志同步写`10_ui/vcu_tool.log`）
-- Simulink工具栏：`install_toolstrip`装载后，任意模型出现 **VCU** 选项卡（新建/字典/生成/验证四组，作用于当前模型；`uninstall_toolstrip`卸载）
+- Simulink工具栏：`install_toolstrip`装载后，任意模型出现 **VCU** 选项卡（新建/字典/生成/验证四组，作用于当前模型；`uninstall_toolstrip`卸载）。按钮改动后跑`slReloadToolstripConfig`刷新；中文JSON勿用PowerShell文本命令读写（编码坑）。
 
 ## 目录
 

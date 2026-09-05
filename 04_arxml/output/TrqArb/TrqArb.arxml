@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model TrqArb
-Model version                : 1.32
+Model version                : 1.34
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Sun Sep 06 01:02:11 2026
+XML source code generated on : Sun Sep 06 01:27:13 2026
 Model Checksum               : 2395618450 2938780741 3192686250 1468717771
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
@@ -78,7 +78,7 @@ Model Checksum               : 2395618450 2938780741 3192686250 1468717771
                         <SWC-INTERNAL-BEHAVIOR UUID="2487ed7c-d7db-5ae0-0dc1-6610e6256c8c">
                             <SHORT-NAME>TrqArb_IB</SHORT-NAME>
                             <AR-TYPED-PER-INSTANCE-MEMORYS>
-                                <VARIABLE-DATA-PROTOTYPE UUID="eaf4b4da-c10a-5fa2-fdc6-6bc5ec7faa81">
+                                <VARIABLE-DATA-PROTOTYPE UUID="054f4ae2-47d0-5b9d-1a84-a737429eb454">
                                     <SHORT-NAME>TrqArb_Irv_TrqLim</SHORT-NAME>
                                     <CATEGORY>VALUE</CATEGORY>
                                     <SW-DATA-DEF-PROPS>
@@ -91,7 +91,7 @@ Model Checksum               : 2395618450 2938780741 3192686250 1468717771
                                     </SW-DATA-DEF-PROPS>
                                     <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Float</TYPE-TREF>
                                 </VARIABLE-DATA-PROTOTYPE>
-                                <VARIABLE-DATA-PROTOTYPE UUID="12efac1f-6f86-5caf-fb78-c07c43a70ee9">
+                                <VARIABLE-DATA-PROTOTYPE UUID="a646a42a-f16a-50fd-8a46-33a3f470e720">
                                     <SHORT-NAME>Meas_TrqOut</SHORT-NAME>
                                     <CATEGORY>VALUE</CATEGORY>
                                     <SW-DATA-DEF-PROPS>
@@ -125,7 +125,7 @@ Model Checksum               : 2395618450 2938780741 3192686250 1468717771
                                     <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
                                     <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
                                     <DATA-READ-ACCESSS>
-                                        <VARIABLE-ACCESS UUID="e70dfec2-f562-5435-79bf-54a1298a72f6">
+                                        <VARIABLE-ACCESS UUID="b6b0b3d5-f81b-587b-3d1e-a6167d3e3355">
                                             <SHORT-NAME>IN_P_VehSpd_In_VehSpd</SHORT-NAME>
                                             <ACCESSED-VARIABLE>
                                                 <AUTOSAR-VARIABLE-IREF>
@@ -136,7 +136,7 @@ Model Checksum               : 2395618450 2938780741 3192686250 1468717771
                                         </VARIABLE-ACCESS>
                                     </DATA-READ-ACCESSS>
                                     <DATA-WRITE-ACCESSS>
-                                        <VARIABLE-ACCESS UUID="37cc2535-ed7d-55ba-5179-184551a458f0">
+                                        <VARIABLE-ACCESS UUID="9a35d090-af2a-5253-6d7c-e1aaff25a20e">
                                             <SHORT-NAME>OUT_P_DrvTrqReq_Out_DrvTrqReq</SHORT-NAME>
                                             <ACCESSED-VARIABLE>
                                                 <AUTOSAR-VARIABLE-IREF>
@@ -147,7 +147,7 @@ Model Checksum               : 2395618450 2938780741 3192686250 1468717771
                                         </VARIABLE-ACCESS>
                                     </DATA-WRITE-ACCESSS>
                                     <PARAMETER-ACCESSS>
-                                        <PARAMETER-ACCESS UUID="edc5f6b6-775a-57d9-2413-3aa6c54566a0">
+                                        <PARAMETER-ACCESS UUID="7dc35dcf-578b-5d2b-ed63-8fb2d94352ce">
                                             <SHORT-NAME>SCALPRM_Cal_TrqMax</SHORT-NAME>
                                             <ACCESSED-PARAMETER>
                                                 <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Components/TrqArb/TrqArb_IB/Cal_TrqMax</LOCAL-PARAMETER-REF>
@@ -158,7 +158,7 @@ Model Checksum               : 2395618450 2938780741 3192686250 1468717771
                                 </RUNNABLE-ENTITY>
                             </RUNNABLES>
                             <SHARED-PARAMETERS>
-                                <PARAMETER-DATA-PROTOTYPE UUID="075ec63a-f80d-58f1-45f4-d89be89e314e">
+                                <PARAMETER-DATA-PROTOTYPE UUID="f081000c-4c7c-53a9-e45c-58efaaeff2e7">
                                     <SHORT-NAME>Cal_TrqMax</SHORT-NAME>
                                     <CATEGORY>VALUE</CATEGORY>
                                     <SW-DATA-DEF-PROPS>
