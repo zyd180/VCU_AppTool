@@ -1,0 +1,11 @@
+# 构建产物（slbuild手写到模型根目录，每次run_all重生成，不入库）
+*_autosar_rtw/
+slprj/
+*.slxc
+*.mk
+cov.html
+scv_images/
+# 报告生成器散文件/锁文件/自动保存（req_report已改movefile，此为历史残留）
+slreqrpt_*.docx
+~$*.docx
+*.autosave
