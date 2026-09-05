@@ -1,5 +1,13 @@
 # 更新日志（Keep a Changelog 口径，按版本倒序）
 
+## [0.4.0] - 2026-09-06
+### 新增
+- 完整UI `10_ui/vcu_app.m`（uifigure 7页：新建/字典/建模/生成/需求/测试/关于，日志同步写文件）
+- `callbacks/`8回调全接通后端；`package_app.m`打包向导
+- Simulink工具栏VCU选项卡（新建/字典/生成/验证四组，作用当前模型；`install/uninstall_toolstrip`）
+### 说明
+- `.mlapp`改纯代码实现（二进制不可diff/不可脚本验证）；R2023a无纯脚本`.mlappinstall`打包API
+
 ## [0.3.0] - 2026-09-06
 ### 新增
 - 真多runnable（率式）：`dd_apply_runnable`重写N行（周期升序↔`Periodic:D1..DN`），runnable/事件新建，RT参数固化，多速率自动开multitasking+端口切Explicit+incremental拾取新端口

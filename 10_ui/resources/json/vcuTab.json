@@ -1,0 +1,81 @@
+{
+    "version": "1.0",
+    "entries": [
+        {
+            "type": "Tab",
+            "id": "vcuTab",
+            "title": "VCU",
+            "children": [
+                {
+                    "type": "Section",
+                    "title": "新建",
+                    "children": [
+                        {
+                            "type": "Column",
+                            "children": [
+                                { "type": "PushButton", "action": "vcuOpenAppAction" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "children": [
+                                { "type": "PushButton", "action": "vcuNewSwcAction" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Section",
+                    "title": "字典",
+                    "children": [
+                        {
+                            "type": "Column",
+                            "children": [
+                                { "type": "PushButton", "action": "vcuDdGenAction" },
+                                { "type": "PushButton", "action": "vcuDdCheckAction" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Section",
+                    "title": "生成",
+                    "children": [
+                        {
+                            "type": "Column",
+                            "children": [
+                                { "type": "PushButton", "action": "vcuCodegenAction" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "children": [
+                                { "type": "PushButton", "action": "vcuArxmlAction" },
+                                { "type": "PushButton", "action": "vcuA2lAction" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Section",
+                    "title": "验证",
+                    "children": [
+                        {
+                            "type": "Column",
+                            "children": [
+                                { "type": "PushButton", "action": "vcuRunAllAction" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "children": [
+                                { "type": "PushButton", "action": "vcuTestAction" },
+                                { "type": "PushButton", "action": "playSimulationAction" }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

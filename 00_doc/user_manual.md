@@ -17,6 +17,12 @@
 2. **命名即接口**：`In_`输入/`Out_`输出/`Cal_`标定/`Irv_`内部/`Nvm_`非易失/`Meas_`测量/`P_`端口/`If_`接口/`R_`任务/`En_`枚举。详见 `naming_spec.md`。
 3. **检查先行**：任何报错先看 `dd_check` 输出，它会精确指出哪张表哪一行；模型侧问题看 Diagnostic Viewer。
 
+## 2.5 界面使用（替代命令行）
+
+- 主界面 `vcu_app`：顶栏下拉选SWC，7页操作，底部日志（同步写`10_ui/vcu_tool.log`）；关于页显示版本+toolbox缺失标红。
+- Simulink工具栏：首次`install_toolstrip`（以后自动加载），任意模型见VCU选项卡，按钮作用于**当前打开模型**；出错弹窗，不中断。
+- 打包分发：`package_app`校验后打开打包对话框（Main file选`10_ui/vcu_app.m`），产出`.mlappinstall`。
+
 ## 3. 新建 SWC（标准流程）
 
 ```matlab

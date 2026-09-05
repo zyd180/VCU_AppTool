@@ -20,6 +20,11 @@ req_report('MySwc');     % 需求报告（可选）
 产物位置：代码 `05_codegen/output/<SWC>/`、ARXML `04_arxml/output/<SWC>/`、
 A2L `08_cal/output/<SWC>/`、需求 `09_req/<SWC>_req.slreqx`。
 
+## 界面使用（可替代命令行）
+
+- 主界面：`vcu_app`（7页：新建/字典/建模/生成/需求/测试/关于，底部日志同步写`10_ui/vcu_tool.log`）
+- Simulink工具栏：`install_toolstrip`装载后，任意模型出现 **VCU** 选项卡（新建/字典/生成/验证四组，作用于当前模型；`uninstall_toolstrip`卸载）
+
 ## 目录
 
 ```text
@@ -30,6 +35,7 @@ A2L `08_cal/output/<SWC>/`、需求 `09_req/<SWC>_req.slreqx`。
 04_arxml/     ARXML 生成与校验        05_codegen/  一键代码生成
 06_harness/   仿真 Harness 生成        07_test/     仿真+覆盖率快跑
 08_cal/       A2L 导出+地址审计        09_req/      需求骨架/链接/检查/报告
+10_ui/        vcu_app主界面+callbacks+strip工具栏脚本+resources工具栏定义
 tools/        new_swc / run_all / check_all
 ```
 

@@ -60,6 +60,8 @@ UI 与后端解耦：界面只做参数收集+调用+日志展示，所有逻辑
 ## 5. 约束与风险
 
 - R2023a无`slUpdateToolstripComponent`（R2023b+才有），改JSON后用全量`slReloadToolstripConfig`。
+- 按钮用纯文本（无自定义图标）：内建图标名需交互式`slUIDeveloperMode`获取且跨版本易变，文本按钮最稳。
+- R2023a两坑：`findobj(...).Text=`链式赋值非法（拆变量）；` Groot `下无uifigure（`isvalid`为准，日志验证代替窗口枚举）。
 - UI全纯代码（`.mlapp`二进制不可diff、不可脚本验证，已弃用）：`vcu_app.m`只摆控件，逻辑全在`callbacks/*.m`与后端函数。
 - 团队MATLAB版本须统一R2023a（toolstrip JSON跨大版本不保证兼容），记入手册。
 - 预估：U1半天，U2两天，U3一天，U4一天。

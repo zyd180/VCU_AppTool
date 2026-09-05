@@ -1,0 +1,14 @@
+{
+    "version": "1.0",
+    "entries": [
+        { "type": "Action", "id": "vcuOpenAppAction", "text": "打开\nApp", "description": "打开VCU工具主界面", "command": "vcu_ts_open_app", "commandType": "Script" },
+        { "type": "Action", "id": "vcuNewSwcAction", "text": "新建\nSWC", "description": "新建SWC全套文件", "command": "vcu_ts_new_swc", "commandType": "Script" },
+        { "type": "Action", "id": "vcuDdGenAction", "text": "字典转.m", "description": "当前模型字典转.m", "command": "vcu_ts_dd_gen", "commandType": "Script" },
+        { "type": "Action", "id": "vcuDdCheckAction", "text": "字典检查", "description": "字典+需求检查（当前模型）", "command": "vcu_ts_dd_check", "commandType": "Script" },
+        { "type": "Action", "id": "vcuCodegenAction", "text": "一键\n代码", "description": "当前模型生成.c/.h", "command": "vcu_ts_code", "commandType": "Script" },
+        { "type": "Action", "id": "vcuArxmlAction", "text": "ARXML", "description": "当前模型生成校验ARXML", "command": "vcu_ts_arxml", "commandType": "Script" },
+        { "type": "Action", "id": "vcuA2lAction", "text": "A2L", "description": "当前模型导出A2L", "command": "vcu_ts_a2l", "commandType": "Script" },
+        { "type": "Action", "id": "vcuRunAllAction", "text": "全链\nrun_all", "description": "当前模型跑全链", "command": "vcu_ts_runall", "commandType": "Script" },
+        { "type": "Action", "id": "vcuTestAction", "text": "测试快跑", "description": "当前模型仿真+覆盖率", "command": "vcu_ts_test", "commandType": "Script" }
+    ]
+}

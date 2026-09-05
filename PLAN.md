@@ -23,6 +23,7 @@ VCU_AppTool/
   07_test/                 test_run.m
   08_cal/                  export_a2l_hook.m, output/
   09_req/                   req_gen.m, req_link.m, req_check.m, req_report.m, output/
+  10_ui/                    vcu_app.m, callbacks/, strip/, resources/, install_toolstrip.m
   tools/                   new_swc.m, check_all.m, run_all.m
 ```
 
