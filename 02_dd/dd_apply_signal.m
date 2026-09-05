@@ -120,7 +120,11 @@ checkWired();
             if isempty(ph.Outport), warning('测量 %s 的SrcBlock %s 无输出端口', nm, src); return; end
             outPh = ph.Outport(1);
             set_param(outPh, 'TestPoint', 'on');
-            set_param(modelName, 'SimulationCommand', 'update');
+try
+    set_param(modelName, 'SimulationCommand', 'update');
+catch ME
+    warning('update未通过（内部模块类型需手工对齐）: %s', ME.message(1:min(200,numel(ME.message))));
+end
             sMap = autosar.api.getSimulinkMapping(modelName);
             try sMap.addSignal(outPh); catch, end % 已存在则跳过
             sMap.mapSignal(outPh, 'ArTypedPerInstanceMemory', 'ShortName', nm);

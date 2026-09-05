@@ -29,7 +29,11 @@ for r = 2:size(T,1)
         warning('标定量 %s 未被任何Constant/Gain模块引用，仅进工作区（代码/ARXML将裁剪）', nm);
     end
 end
-set_param(modelName, 'SimulationCommand', 'update');
+try
+    set_param(modelName, 'SimulationCommand', 'update');
+catch ME
+    warning('update未通过（内部模块类型需手工对齐）: %s', ME.message(1:min(200,numel(ME.message))));
+end
 slMap = autosar.api.getSimulinkMapping(modelName);
 for r = 2:size(T,1)
     nm = char(string(T{r,1}));
@@ -46,12 +50,14 @@ fprintf('dd_apply_calibration完成: %s，%d个标定量已映射SharedParameter
 
     function hit = pointBlockAt(nm)
         hit = false;
-        blk = [modelName '/' nm];
-        if exist_block(blk, 'Constant')
-            try set_param(blk, 'Value', nm); hit = true; catch, end
-        end
-        if exist_block(blk, 'Gain')
-            try set_param(blk, 'Gain', nm); hit = true; catch, end
+        for b = {[modelName '/' nm], [modelName '/' modelName '/' nm]} %#ok<AGROW>
+            blk = b{1};
+            if exist_block(blk, 'Constant')
+                try set_param(blk, 'Value', nm); hit = true; catch, end
+            end
+            if exist_block(blk, 'Gain')
+                try set_param(blk, 'Gain', nm); hit = true; catch, end
+            end
         end
     end
 
