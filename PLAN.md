@@ -98,3 +98,4 @@ new_swc('MySwc'); run_all('TrqArb');
 - 2026-09-06：A2L地址审计落地：export_a2l_hook新增可选MapFile透传+ECU_ADDRESS全0审计（占位告警并指重导命令）；实测本环境无可链接二进制（AUTOSAR target不产.exe），当前.a2l地址确为全0占位，真实地址须目标ELF——能力已就绪，缺目标链。
 - 2026-09-06：跨runnable IRV显式传递探针结论（未落地，止损）：约20组探针证实R2023a率式下`mapDataTransfer`无程序化入口——`find(slMap,"DataTransfers")`恒空（新版才返string数组），RT直连Outport/子系统边界/D1真信号/具名信号线/信号对象/映射重建/slbuild后均报"does not exist"；官方流程依赖Code Mappings编辑器Update按钮（无等效API）+ demo自带预建IRV/传输。已验证：模式串须是`Implicit`/`Explicit`（非Send/Receive后缀）、IRV须先`arProps.add(ib,'IRV',name)`。 workaround：GUI Update一次后按名映射；工具侧保持DSM+ArTypedPerInstanceMemory等效方案。划痕TmpIrv2/TmpCtl已清理。
 - 2026-09-06：文档与版本管理落地：新增README/CHANGELOG/使用手册（00_doc/user_manual.md）/VERSION(0.3.0)，run_all打印工具版本；版本策略SemVer写入README（发版=更新VERSION+CHANGELOG→双SWC回归→commit→tag）。
+- 2026-09-06：UI计划定稿（00_doc/ui_plan.md）：App Designer改纯代码uifigure（10_ui/vcu_app.m，二进制不可验证），Simulink工具栏走官方custom tab路线；U1完成（7页壳+日志+SWC下拉+关于页环境检查），实测通过。修过3处R2023a坑：findobj链式赋值非法、ver须ver()、string不支持*。

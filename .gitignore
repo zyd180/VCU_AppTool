@@ -5,6 +5,8 @@ slprj/
 *.mk
 cov.html
 scv_images/
+# UI运行日志
+*.log
 # 报告生成器散文件/锁文件/自动保存（req_report已改movefile，此为历史残留）
 slreqrpt_*.docx
 ~$*.docx
